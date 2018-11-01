@@ -20,9 +20,16 @@ public class ShelterUserController {
 
     }
 
-    public void isRegister(){
+    // 授权页面 登陆接口
+    public String isRegister(){// TODO 给一个结构体 userinfo
 
-        // 是否注册过
+        // 判断是否注册过
+
+        // 如果注册过则直接访问微信接口
+
+        // 如果没有注册过先注册在访问微信接口
+
+        return "token"; // 访问微信返回的一个token
     }
 
     public void userLogin(){

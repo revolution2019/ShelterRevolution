@@ -13,9 +13,13 @@ import java.util.List;
 @RestController
 public class ShelterResourceController {
 
+
+    // 发布房源
     public void submitResourceInfo(){
 
         // 上传资源信息到服务器
+
+        // 创建相关标签
     }
 
     public void modifyResourceInfo(){
@@ -29,7 +33,9 @@ public class ShelterResourceController {
 
     }
 
-    public List queryResourceInfo(){
+
+    // 首页列表查询
+    public List queryResourceInfo(){ // TODO 过滤条件
 
         // 根据用户需求标签查询资源列表
 
@@ -50,6 +56,12 @@ public class ShelterResourceController {
     public void admireResource(){
 
         // 点赞资源
+    }
+
+    public List queryResourceByUser(){
+
+        // 查询用户名下有多少资源--房东有多少房源
+        return null;
     }
 
 }
